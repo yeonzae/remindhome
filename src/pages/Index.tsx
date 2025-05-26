@@ -1,8 +1,7 @@
-import { Search, MapPin, Calculator, BookOpen, MessageSquare, Brain } from "lucide-react";
+import { MapPin, Calculator, BookOpen, MessageSquare, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import Layout from "@/components/Layout";
 
 const Index = () => {
@@ -88,6 +87,20 @@ const Index = () => {
                   <div>
                     <h4 className="text-[15px] font-medium text-gray-900">가이드</h4>
                     <p className="text-[13px] text-gray-500">단계별 치매 돌봄 가이드</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link to="/community">
+              <Card className="bg-white hover:bg-gray-50 transition-colors border-gray-100">
+                <CardContent className="flex items-center p-5">
+                  <div className="mr-4 p-2.5 bg-blue-50 rounded-lg">
+                    <Users className="h-5 w-5 text-blue-500" />
+                  </div>
+                  <div>
+                    <h4 className="text-[15px] font-medium text-gray-900">커뮤니티</h4>
+                    <p className="text-[13px] text-gray-500">보호자들과 정보 공유하기</p>
                   </div>
                 </CardContent>
               </Card>
